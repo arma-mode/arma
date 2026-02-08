@@ -109,19 +109,38 @@ h1{margin:.9rem 0 .55rem;font-size:clamp(2.3rem,4.4vw,3.4rem);letter-spacing:.12
   padding:14px;
   box-shadow:var(--shadow);
 }
+
+.hero__media{
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(0,0,0,.15);
+}
+
+/* Desktop: tipo banner bonito */
 .hero__img{
   width:100%;
   height:320px;
   object-fit:cover;
-  border-radius:14px;
-  border:1px solid rgba(255,255,255,.10);
-}
-.hero__caption{
-  margin-top:10px;
-  color:var(--muted);
-  font-size:.92rem;
+  object-position:center;
+  display:block;
 }
 
+/* Tablet */
+@media (max-width: 980px){
+  .hero__img{
+    height:280px;
+    object-position:center;
+  }
+}
+
+/* Celular: más alto para que no se corte feo */
+@media (max-width: 520px){
+  .hero__img{
+    height:360px;
+    object-position:center top;
+  }
+}
 .section{padding:64px 0}
 .section--alt{
   background:rgba(255,255,255,.04);
