@@ -30,6 +30,8 @@ code{background:rgba(255,255,255,.12);padding:.1rem .35rem;border-radius:.35rem}
   border-bottom:1px solid var(--line);
 }
 .header__inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:14px 0}
+.brand{font-weight:900;letter-spacing:.22em}
+.brand:hover{opacity:.9}
 
 .brand{display:flex;align-items:center}
 .brand img{height:34px;width:auto;display:block}
