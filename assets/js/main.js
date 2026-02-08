@@ -9,11 +9,9 @@ burger?.addEventListener("click", () => {
   mobileMenu.style.display = isOpen ? "none" : "block";
 });
 
-// cerrar menú al hacer click en un link
 mobileMenu?.querySelectorAll("a").forEach(a => {
   a.addEventListener("click", () => {
     burger.setAttribute("aria-expanded", "false");
     mobileMenu.style.display = "none";
   });
 });
-
