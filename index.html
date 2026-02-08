@@ -21,18 +21,29 @@
 
       <div class="header__actions">
         <div class="social">
-          <!-- Reemplaza con tus links reales -->
-          <a class="social__btn" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
-          <a class="social__btn" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
-          <a class="social__btn" href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
-        </div>
+          <!-- Instagram -->
+          <a class="iconBtn" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Z"/>
+              <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
+              <path d="M17.6 6.4a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"/>
+            </svg>
+          </a>
 
-        <!-- ÚNICO BOTÓN WHATSAPP -->
-        <a class="btn btn--primary"
-           href="https://wa.me/WHATSAPP_NUMBER?text=Hola%20ARMA%2C%20quiero%20información%20sobre%20sus%20polos%20oversize."
-           target="_blank" rel="noopener">
-          WhatsApp
-        </a>
+          <!-- Facebook -->
+          <a class="iconBtn" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.5 22v-8h3l.5-4h-3.5V7.6c0-1.1.3-1.8 1.9-1.8H17V2.2c-.3 0-1.4-.2-2.7-.2-2.7 0-4.6 1.6-4.6 4.7V10H7v4h2.7v8h3.8Z"/>
+            </svg>
+          </a>
+
+          <!-- TikTok (icono estilo simple) -->
+          <a class="iconBtn" href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 3c.4 3 2.7 5.2 5.7 5.5V12c-2 0-3.8-.7-5.2-1.8V16a6 6 0 1 1-6-6c.4 0 .8 0 1.2.1v3.4c-.3-.1-.7-.2-1.2-.2a2.6 2.6 0 1 0 2.6 2.6V3h3Z"/>
+            </svg>
+          </a>
+        </div>
 
         <!-- Botón menú mobile -->
         <button class="burger" id="burger" aria-label="Abrir menú" aria-controls="mobileMenu" aria-expanded="false">☰</button>
@@ -54,112 +65,76 @@
         <p class="pill">POLOS OVERSIZE • STREETWEAR</p>
         <h1>ARMA</h1>
         <p class="hero__lead">
-          Polos oversize con presencia. Minimal, urbano y cómodo. Mostramos 10 productos por ahora; iremos agregando más.
+          Polos oversize con presencia. Cómodos, sólidos y con actitud.  
+          Aquí mostramos 10 productos (demo), luego iremos agregando más drops.
         </p>
 
         <div class="hero__cta">
-          <a class="btn btn--primary" href="#galeria">Ver productos</a>
+          <a class="btn btn--primary" href="#galeria">Ver galería</a>
           <a class="btn btn--ghost" href="#contacto">Contacto</a>
         </div>
 
-        <div class="stats">
-          <div class="stat"><span class="stat__big">10</span><span class="stat__small">Productos</span></div>
-          <div class="stat"><span class="stat__big">Oversize</span><span class="stat__small">Fit</span></div>
-          <div class="stat"><span class="stat__big">Lima</span><span class="stat__small">Entrega</span></div>
+        <div class="chips">
+          <span class="chip">Oversize fit</span>
+          <span class="chip">Lima</span>
+          <span class="chip">Stock limitado</span>
         </div>
       </div>
 
       <div class="hero__card">
-        <div class="hero__img placeholder">
-          <div class="placeholder__icon">📸</div>
-          <div>
-            <strong>Foto principal</strong>
-            <p>Cuando la tengas, súbela como <code>assets/img/hero.jpg</code> y cambia este bloque por un &lt;img&gt;.</p>
-          </div>
-        </div>
-        <!-- Luego:
-        <img class="hero__img real" src="assets/img/hero.jpg" alt="ARMA polos oversize">
-        -->
+        <img class="hero__img" src="assets/img/hero.webp" alt="ARMA Polos Oversize (demo)" />
+        <div class="hero__caption">Imagen demo (cámbiala por tu foto real cuando quieras)</div>
       </div>
     </div>
   </main>
 
-  <!-- GALERÍA: 10 FOTOS -->
+  <!-- GALERÍA -->
   <section id="galeria" class="section">
     <div class="container">
       <div class="section__head">
-        <h2>Galería</h2>
-        <p>10 productos (por ahora). Cuando tengas fotos, súbelas a <code>assets/img/</code> y reemplaza cada placeholder.</p>
+        <h2>Galería (10 productos)</h2>
+        <p>Usando imágenes demo para que veas el resultado. Solo reemplaza los archivos en <code>assets/img/</code>.</p>
       </div>
 
       <div class="gallery">
-        <!-- 01 -->
         <figure class="gcard">
-          <div class="gimg placeholder small"><span>Foto 01</span></div>
-          <!-- <img class="gimg" src="assets/img/polo01.jpg" alt="Polo oversize ARMA 01"> -->
+          <img class="gimg" src="assets/img/polo01.webp" alt="Polo oversize ARMA 01">
           <figcaption>Polo Oversize — 01</figcaption>
         </figure>
-
-        <!-- 02 -->
         <figure class="gcard">
-          <div class="gimg placeholder small"><span>Foto 02</span></div>
-          <!-- <img class="gimg" src="assets/img/polo02.jpg" alt="Polo oversize ARMA 02"> -->
+          <img class="gimg" src="assets/img/polo02.webp" alt="Polo oversize ARMA 02">
           <figcaption>Polo Oversize — 02</figcaption>
         </figure>
-
-        <!-- 03 -->
         <figure class="gcard">
-          <div class="gimg placeholder small"><span>Foto 03</span></div>
-          <!-- <img class="gimg" src="assets/img/polo03.jpg" alt="Polo oversize ARMA 03"> -->
+          <img class="gimg" src="assets/img/polo03.webp" alt="Polo oversize ARMA 03">
           <figcaption>Polo Oversize — 03</figcaption>
         </figure>
-
-        <!-- 04 -->
         <figure class="gcard">
-          <div class="gimg placeholder small"><span>Foto 04</span></div>
-          <!-- <img class="gimg" src="assets/img/polo04.jpg" alt="Polo oversize ARMA 04"> -->
+          <img class="gimg" src="assets/img/polo04.webp" alt="Polo oversize ARMA 04">
           <figcaption>Polo Oversize — 04</figcaption>
         </figure>
-
-        <!-- 05 -->
         <figure class="gcard">
-          <div class="gimg placeholder small"><span>Foto 05</span></div>
-          <!-- <img class="gimg" src="assets/img/polo05.jpg" alt="Polo oversize ARMA 05"> -->
+          <img class="gimg" src="assets/img/polo05.webp" alt="Polo oversize ARMA 05">
           <figcaption>Polo Oversize — 05</figcaption>
         </figure>
-
-        <!-- 06 -->
         <figure class="gcard">
-          <div class="gimg placeholder small"><span>Foto 06</span></div>
-          <!-- <img class="gimg" src="assets/img/polo06.jpg" alt="Polo oversize ARMA 06"> -->
+          <img class="gimg" src="assets/img/polo06.webp" alt="Polo oversize ARMA 06">
           <figcaption>Polo Oversize — 06</figcaption>
         </figure>
-
-        <!-- 07 -->
         <figure class="gcard">
-          <div class="gimg placeholder small"><span>Foto 07</span></div>
-          <!-- <img class="gimg" src="assets/img/polo07.jpg" alt="Polo oversize ARMA 07"> -->
+          <img class="gimg" src="assets/img/polo07.webp" alt="Polo oversize ARMA 07">
           <figcaption>Polo Oversize — 07</figcaption>
         </figure>
-
-        <!-- 08 -->
         <figure class="gcard">
-          <div class="gimg placeholder small"><span>Foto 08</span></div>
-          <!-- <img class="gimg" src="assets/img/polo08.jpg" alt="Polo oversize ARMA 08"> -->
+          <img class="gimg" src="assets/img/polo08.webp" alt="Polo oversize ARMA 08">
           <figcaption>Polo Oversize — 08</figcaption>
         </figure>
-
-        <!-- 09 -->
         <figure class="gcard">
-          <div class="gimg placeholder small"><span>Foto 09</span></div>
-          <!-- <img class="gimg" src="assets/img/polo09.jpg" alt="Polo oversize ARMA 09"> -->
+          <img class="gimg" src="assets/img/polo09.webp" alt="Polo oversize ARMA 09">
           <figcaption>Polo Oversize — 09</figcaption>
         </figure>
-
-        <!-- 10 -->
         <figure class="gcard">
-          <div class="gimg placeholder small"><span>Foto 10</span></div>
-          <!-- <img class="gimg" src="assets/img/polo10.jpg" alt="Polo oversize ARMA 10"> -->
+          <img class="gimg" src="assets/img/polo10.webp" alt="Polo oversize ARMA 10">
           <figcaption>Polo Oversize — 10</figcaption>
         </figure>
       </div>
@@ -177,18 +152,18 @@
       <div class="steps">
         <div class="step">
           <div class="step__num">1</div>
-          <h3>Elige tu producto</h3>
-          <p>Revisa la galería y guarda el número del modelo.</p>
+          <h3>Elige tu modelo</h3>
+          <p>Revisa la galería y guarda el número del polo.</p>
         </div>
         <div class="step">
           <div class="step__num">2</div>
-          <h3>Escríbenos por WhatsApp</h3>
-          <p>Confirma talla, stock y precio.</p>
+          <h3>Escríbenos</h3>
+          <p>Confirma talla, stock y precio por WhatsApp.</p>
         </div>
         <div class="step">
           <div class="step__num">3</div>
-          <h3>Coordinamos entrega</h3>
-          <p>Delivery o punto de encuentro (según zona).</p>
+          <h3>Entrega</h3>
+          <p>Coordinamos delivery o punto de encuentro.</p>
         </div>
       </div>
     </div>
@@ -199,28 +174,28 @@
     <div class="container">
       <div class="section__head">
         <h2>Contacto</h2>
-        <p>Un solo canal oficial para compras.</p>
+        <p>Un solo canal oficial.</p>
       </div>
 
       <div class="contact">
         <div class="contact__card">
           <h3>WhatsApp ARMA</h3>
-          <p>Haz tu pedido por aquí.</p>
+          <p>Escríbenos y te respondemos.</p>
           <a class="btn btn--primary"
-             href="https://wa.me/WHATSAPP_NUMBER?text=Hola%20ARMA%2C%20quiero%20hacer%20un%20pedido%20de%20polos%20oversize."
+             href="https://wa.me/WHATSAPP_NUMBER?text=Hola%20ARMA%2C%20quiero%20información%20sobre%20polos%20oversize."
              target="_blank" rel="noopener">
             Ir a WhatsApp
           </a>
-          <p class="muted">Reemplaza <code>WHATSAPP_NUMBER</code> por tu número.</p>
+          <p class="muted">Reemplaza <code>WHATSAPP_NUMBER</code> por tu número (ej: 519XXXXXXXX).</p>
         </div>
 
         <div class="contact__card">
           <h3>Redes</h3>
           <p>Síguenos para ver drops y stock.</p>
-          <div class="social social--big">
-            <a class="social__wide" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
-            <a class="social__wide" href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
-            <a class="social__wide" href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+          <div class="socialList">
+            <a class="socialWide" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a class="socialWide" href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+            <a class="socialWide" href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
           </div>
         </div>
       </div>
@@ -246,10 +221,10 @@
 
       <div>
         <h4>Redes</h4>
-        <div class="social social--footer">
-          <a class="social__wide" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
-          <a class="social__wide" href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
-          <a class="social__wide" href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+        <div class="socialList">
+          <a class="socialWide" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          <a class="socialWide" href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+          <a class="socialWide" href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
         </div>
       </div>
     </div>
@@ -258,12 +233,14 @@
       <small>© <span id="year"></span> ARMA. Todos los derechos reservados.</small>
     </div>
 
-    <!-- Botón flotante WhatsApp -->
+    <!-- BOTÓN FLOTANTE WHATSAPP con ÍCONO -->
     <a class="wsp-float"
        href="https://wa.me/WHATSAPP_NUMBER?text=Hola%20ARMA%2C%20quiero%20información%20sobre%20polos%20oversize."
-       target="_blank" rel="noopener"
-       aria-label="WhatsApp ARMA">
-      WSP
+       target="_blank" rel="noopener" aria-label="WhatsApp ARMA">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Z"/>
+        <path d="M16.6 13.8c-.3-.2-1.7-.8-2-.9s-.5-.1-.7.2-.8.9-1 .1-1.2-.4-2.2-1.3-1.3-1.9-1.5-2.2.1-.5.2-.7l.4-.5c.1-.2.2-.4.3-.6.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.3-.6-.6-.5-.7-.5H6.7c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.7 1.2 3.2 1.3 3.4c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.9.6.8.2 1.6.2 2.2.1.7-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.1-1.3 0-.2-.2-.2-.4-.3Z"/>
+      </svg>
     </a>
 
     <script src="assets/js/main.js"></script>
