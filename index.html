@@ -1,3 +1,4 @@
+<!-- index.html (REEMPLAZA TODO tu archivo por esto) -->
 <!doctype html>
 <html lang="es">
 <head>
@@ -5,13 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ARMA — Polos Oversize</title>
   <meta name="description" content="ARMA — polos oversize. Streetwear con identidad. Hecho en Perú." />
+
+  <!-- Favicon (cambia el nombre si tu archivo se llama distinto) -->
+  <link rel="icon" type="image/png" href="assets/img/arma.png">
+
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
   <!-- HEADER -->
   <header class="header">
     <div class="container header__inner">
-      <a class="brand" href="#inicio" aria-label="ARMA Home">ARMA</a>
+      <!-- LOGO (cambia el nombre si tu archivo se llama distinto) -->
+      <a class="brand" href="#inicio" aria-label="ARMA Home">
+        <img src="assets/img/logo-arma.webp" alt="ARMA logo">
+      </a>
 
       <nav class="nav" aria-label="Navegación">
         <a href="#galeria">Galería</a>
@@ -37,7 +45,7 @@
             </svg>
           </a>
 
-          <!-- TikTok (icono estilo simple) -->
+          <!-- TikTok -->
           <a class="iconBtn" href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M14 3c.4 3 2.7 5.2 5.7 5.5V12c-2 0-3.8-.7-5.2-1.8V16a6 6 0 1 1-6-6c.4 0 .8 0 1.2.1v3.4c-.3-.1-.7-.2-1.2-.2a2.6 2.6 0 1 0 2.6 2.6V3h3Z"/>
@@ -45,12 +53,10 @@
           </a>
         </div>
 
-        <!-- Botón menú mobile -->
         <button class="burger" id="burger" aria-label="Abrir menú" aria-controls="mobileMenu" aria-expanded="false">☰</button>
       </div>
     </div>
 
-    <!-- Menú mobile -->
     <div class="mobile" id="mobileMenu">
       <a href="#galeria">Galería</a>
       <a href="#como-comprar">Cómo comprar</a>
@@ -65,8 +71,7 @@
         <p class="pill">POLOS OVERSIZE • STREETWEAR</p>
         <h1>ARMA</h1>
         <p class="hero__lead">
-          Polos oversize con presencia. Cómodos, sólidos y con actitud.  
-          Aquí mostramos 10 productos (demo), luego iremos agregando más drops.
+          Polos oversize con presencia. Cómodos, sólidos y con actitud. Aquí mostramos 10 productos, luego iremos agregando más drops.
         </p>
 
         <div class="hero__cta">
@@ -82,7 +87,9 @@
       </div>
 
       <div class="hero__card">
-        <img class="hero__img" src="assets/img/hero.webp" alt="ARMA Polos Oversize (demo)" />
+        <div class="hero__media">
+          <img class="hero__img" src="assets/img/hero.webp" alt="ARMA polos oversize">
+        </div>
       </div>
     </div>
   </main>
@@ -92,7 +99,7 @@
     <div class="container">
       <div class="section__head">
         <h2>Galería (10 productos)</h2>
-        <p>Imagenes Demo<code>assets/img/</code>.</p>
+        <p>Fotos referenciales por ahora. Conforme tengamos nuevos drops, iremos actualizando.</p>
       </div>
 
       <div class="gallery">
@@ -156,13 +163,13 @@
         </div>
         <div class="step">
           <div class="step__num">2</div>
-          <h3>Escríbenos</h3>
-          <p>Confirma talla, stock y precio por WhatsApp.</p>
+          <h3>Escríbenos por WhatsApp</h3>
+          <p>Confirmamos talla, stock y precio.</p>
         </div>
         <div class="step">
           <div class="step__num">3</div>
-          <h3>Entrega</h3>
-          <p>Coordinamos delivery o punto de encuentro.</p>
+          <h3>Coordinamos entrega</h3>
+          <p>Delivery o punto de encuentro según zona.</p>
         </div>
       </div>
     </div>
@@ -177,18 +184,16 @@
       </div>
 
       <div class="contact">
-  <div class="contact__card">
-    <h3>WhatsApp ARMA</h3>
-    <p>Escríbenos y te respondemos a la brevedad.</p>
+        <div class="contact__card">
+          <h3>WhatsApp ARMA</h3>
+          <p>Escríbenos y te respondemos a la brevedad.</p>
 
-    <a class="btn btn--primary"
-       href="https://wa.me/51932210608?text=Hola%20ARMA%2C%20quiero%20información%20sobre%20polos%20oversize."
-       target="_blank" rel="noopener">
-      Ir a WhatsApp
-    </a>
-  </div>
-</div>
- <br>
+          <a class="btn btn--primary"
+             href="https://wa.me/51932210608?text=Hola%20ARMA%2C%20quiero%20informaci%C3%B3n%20sobre%20polos%20oversize."
+             target="_blank" rel="noopener">
+            Ir a WhatsApp
+          </a>
+        </div>
 
         <div class="contact__card">
           <h3>Redes</h3>
@@ -234,9 +239,9 @@
       <small>© <span id="year"></span> ARMA. Todos los derechos reservados.</small>
     </div>
 
-    <!-- BOTÓN FLOTANTE WHATSAPP con ÍCONO -->
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
     <a class="wsp-float"
-       href="https://wa.me/WHATSAPP_NUMBER?text=Hola%20ARMA%2C%20quiero%20información%20sobre%20polos%20oversize."
+       href="https://wa.me/51932210608?text=Hola%20ARMA%2C%20quiero%20informaci%C3%B3n%20sobre%20polos%20oversize."
        target="_blank" rel="noopener" aria-label="WhatsApp ARMA">
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Z"/>
@@ -248,4 +253,3 @@
   </footer>
 </body>
 </html>
-
