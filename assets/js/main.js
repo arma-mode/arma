@@ -1,3 +1,4 @@
+// assets/js/main.js (REEMPLAZA TODO tu archivo por esto)
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const burger = document.getElementById("burger");
